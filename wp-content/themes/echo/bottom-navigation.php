@@ -1,4 +1,4 @@
-<nav class="bottom-navigation">
+<nav class="bottom-navigation bg-red-600">
 
     <a href="<?php echo esc_url(home_url('/')); ?>">
         <span>Home</span>

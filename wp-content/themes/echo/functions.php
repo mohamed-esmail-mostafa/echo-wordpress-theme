@@ -140,6 +140,12 @@ add_action( 'widgets_init', 'echo_widgets_init' );
 function echo_scripts() {
 	wp_enqueue_style( 'echo-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'echo-style', 'rtl', 'replace' );
+	wp_enqueue_style(
+        'tailwind',
+        get_template_directory_uri() . '/src/output.css',
+        [],
+        filemtime(get_template_directory() . '/assets/css/output.css')
+    );
 
 	wp_enqueue_script( 'echo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

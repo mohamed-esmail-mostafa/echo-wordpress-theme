@@ -22,6 +22,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_template_part('bottom-navigation');
 get_sidebar();
 get_footer();
